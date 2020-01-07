@@ -14,6 +14,7 @@ Vue.use(VueRouter)
 
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue').default },
+    { path: '/users', component: require('./components/Users.vue').default },
     { path: '/profile', component: require('./components/Profile.vue').default }
 ]
 
@@ -41,6 +42,7 @@ const router = new VueRouter({
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 Vue.component("Dashboard", () => import("./components/Dashboard").default);
+Vue.component("Users", () => import("./components/Users").default);
 Vue.component("Profile", () => import("./components/Profile").default);
 Vue.component("ExampleComponent", () => import("./components/ExampleComponent").default);
 
